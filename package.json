@@ -1,0 +1,29 @@
+{
+  "name": "coderscamp-spa-project",
+  "version": "1.0.0",
+  "description": "Website made from template during CodersCamp course",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narghar/CodersCamp-SPA-project.git"
+  },
+  "keywords": [
+    "spa"
+  ],
+  "author": "Igor Wysocki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/narghar/CodersCamp-SPA-project/issues"
+  },
+  "homepage": "https://github.com/narghar/CodersCamp-SPA-project#readme",
+  "scripts": {
+    "start": "npm-run-all --parallel devserver compile:sass",
+    "devserver": "live-server",
+    "compile:sass": "node-sass --watch sass/main.scss css/style.css -o"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
