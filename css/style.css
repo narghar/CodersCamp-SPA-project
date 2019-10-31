@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,800&display=swap");
+@font-face {
+  font-family: 'peace_sansregular';
+  src: url("./fonts/peace_sans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
@@ -9,4 +16,23 @@ html {
   font-size: 62.5%; }
 
 h1 {
-  color: red; }
+  color: red;
+  font-size: 40px;
+  font-family: 'peace_sansregular'; }
+
+p {
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif; }
+
+p:nth-of-type(1) {
+  font-weight: 400; }
+
+p:nth-of-type(2) {
+  font-weight: 400;
+  font-style: italic; }
+
+p:nth-of-type(3) {
+  font-weight: 700; }
+
+p:nth-of-type(4) {
+  font-weight: 800; }
