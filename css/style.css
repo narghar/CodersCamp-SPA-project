@@ -397,3 +397,69 @@ h4 {
     .team-person__position span {
       display: block;
       transform: skew(-45deg); }
+
+.clients {
+  padding: 5vw 10vw;
+  margin: 0 auto;
+  max-width: 120rem; }
+
+.client {
+  margin: 6rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .client__image {
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 4rem;
+    margin-right: 4.5rem;
+    box-shadow: -3.5px 11.5px 20px rgba(0, 1, 1, 0.2);
+    border: 1rem solid #fff;
+    transform: rotate(45deg);
+    overflow: hidden; }
+    .client__image img {
+      width: 150%;
+      transform: rotate(-45deg) translateY(-6.5rem); }
+  .client__quote-box {
+    flex: 0 1 65%;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative; }
+    .client__quote-box::before {
+      content: "\201C";
+      position: absolute;
+      top: -7.5rem;
+      left: -10rem;
+      font-size: 20rem; }
+  .client__quote {
+    font-weight: 400;
+    font-style: italic;
+    line-height: 30px; }
+  .client__name {
+    font-weight: 700; }
+
+.other-clients {
+  display: flex; }
+  .other-clients-photo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2.5rem;
+    box-shadow: 2px 2px 4px rgba(35, 31, 32, 0.22);
+    transform: rotate(45deg);
+    overflow: hidden; }
+    .other-clients-photo img {
+      width: 150%;
+      transform: rotate(-45deg) translateY(-1rem); }
+
+footer {
+  padding: 5vw 10vw;
+  margin: 0 auto;
+  max-width: 160rem;
+  background-image: url("../photo/footer.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 30vh; }
