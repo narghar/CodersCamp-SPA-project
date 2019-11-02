@@ -32,6 +32,12 @@ h3 {
   font-weight: 800;
   font-size: 2.5rem; }
 
+h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px; }
+
 .btn {
   display: inline-block;
   line-height: 4rem;
@@ -182,7 +188,7 @@ h3 {
   background-color: #f5f5f5;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr)); }
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr)); }
   .services h2 {
     text-align: center;
     grid-column: 1 / -1;
@@ -209,3 +215,91 @@ h3 {
   align-items: center; }
   .service-header h3 {
     margin-left: 2rem; }
+
+.process {
+  padding: 5vw 0;
+  position: relative;
+  max-width: 160rem;
+  margin: 0 auto;
+  overflow: hidden; }
+  .process h2 {
+    padding: 0 10vw;
+    max-width: 120rem; }
+
+.processes {
+  padding-left: 10vw;
+  max-width: 160rem;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex; }
+  .processes__main-text {
+    flex: 0 0 20%;
+    margin-top: 3rem;
+    margin-right: 12rem; }
+    .processes__main-text .btn {
+      margin: 3rem 0; }
+  .processes__image {
+    flex: 1 0 22%;
+    transform: skewX(-25deg);
+    overflow: hidden;
+    height: 24rem;
+    margin-top: 3rem;
+    margin-right: 8rem;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+    box-shadow: -3.508px 11.476px 20px rgba(0, 1, 1, 0.22);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .processes__image:nth-child(2)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background-image: url("../photo/idea.jpg");
+      background-size: cover;
+      opacity: .3;
+      background-position: center;
+      transform: skewX(25deg);
+      z-index: -1; }
+    .processes__image:nth-child(3)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background-image: url("../photo/design.jpg");
+      background-size: cover;
+      opacity: .7;
+      background-position: center;
+      transform: skewX(25deg);
+      z-index: -1; }
+    .processes__image:nth-child(4)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+      background-image: url("../photo/output.jpg");
+      background-size: cover;
+      opacity: .7;
+      background-position: center;
+      transform: skewX(25deg);
+      z-index: -1; }
+  .processes span {
+    align-self: flex-end;
+    transform: skewX(25deg);
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 2rem; }
+  .processes__text {
+    transform: skewX(25deg);
+    color: #fff;
+    padding: 2rem 4rem;
+    font-size: 1.5rem; }
