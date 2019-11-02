@@ -1,0 +1,48 @@
+.services {
+  padding: 5vw 10vw;
+  margin: 0 auto;
+  max-width: 120rem;
+  background-color: $bg-color-primary;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+
+  & h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 2rem
+  }
+
+}
+
+.service {
+  &__icon {
+    background-color: $color-primary;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img {
+      width: 100%;
+      height: auto;
+    }
+}
+
+&__text {
+  margin-left: 9rem;
+}
+
+
+}
+.service-header {
+  display: flex;
+  align-items: center;
+
+  & h3 {
+    margin-left: 2rem;
+  }
+}
+

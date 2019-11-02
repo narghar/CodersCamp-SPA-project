@@ -9,7 +9,7 @@
   ::before {
     content: "";
     top: 0%;
-    // TODO: media width > 1600px left:100%;
+    // Check media width > 1600px
     left: 70%;
     transform-origin: 0 0;
     transform: rotate(45deg) translate(-50%, -50%);

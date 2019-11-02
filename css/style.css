@@ -18,13 +18,19 @@ html {
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.7rem; }
+  font-size: 1.7rem;
+  color: #6f6f6e; }
 
 h2 {
   font-family: "peace_sansregular", sans-serif;
   color: #494949;
   font-weight: 400;
   font-size: 4rem; }
+
+h3 {
+  letter-spacing: -1px;
+  font-weight: 800;
+  font-size: 2.5rem; }
 
 .btn {
   display: inline-block;
@@ -168,3 +174,38 @@ h2 {
   z-index: -3; }
   .about-img img {
     width: 100%; }
+
+.services {
+  padding: 5vw 10vw;
+  margin: 0 auto;
+  max-width: 120rem;
+  background-color: #f5f5f5;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr)); }
+  .services h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-bottom: 2rem; }
+
+.service__icon {
+  background-color: #bc2e3a;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .service__icon img {
+    width: 100%;
+    height: auto; }
+
+.service__text {
+  margin-left: 9rem; }
+
+.service-header {
+  display: flex;
+  align-items: center; }
+  .service-header h3 {
+    margin-left: 2rem; }
