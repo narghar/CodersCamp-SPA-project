@@ -1,5 +1,4 @@
 .header {
-  max-width: 160rem;
   height: 100vh;
   margin: 0 auto;
   background-image: url('../photo/bg1.jpg');
@@ -112,16 +111,3 @@
   text-align: center;
 }
 
-.btn {
-  display: inline-block;
-  line-height: 4rem;
-  padding: 0 2.2rem;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  color: #242424;
-  box-shadow: -3.508px 11.476px 20px rgba(0, 1, 1, 0.47);
-  background-color: $bg-color-secondary;
-
-}

@@ -50,3 +50,31 @@ body {
   font-family: $font-primary;
   font-size: 1.7rem;
 }
+
+h2 {
+  font-family: $font-secondary;
+  color: $font-color-headings;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  line-height: 4rem;
+  padding: 0 2.2rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #242424;
+  box-shadow: -3.508px 11.476px 20px rgba(0, 1, 1, 0.47);
+  background-color: $bg-color-secondary;
+
+&--red {
+  color: $font-color-secondary;
+  background-color: $color-primary;
+}
+
+}
+
