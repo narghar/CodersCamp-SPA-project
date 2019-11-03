@@ -140,6 +140,9 @@ h4 {
     background-color: black;
     padding-left: 0;
     justify-content: center; }
+    @media (max-width: 20em) {
+      .navbar.expanded {
+        height: 35rem; } }
   .navbar__brand {
     color: #fff;
     text-decoration: none;
