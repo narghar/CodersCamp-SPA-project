@@ -6,6 +6,59 @@ footer {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  height: 30vh;
+  & h2 {
+    color: #9f9f9f;
+  }
+}
+
+.contacts {
+  margin: 5vw 0;
+  max-width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-self: normal;
+  align-items: center;
+
+}
+.contact {
+  min-width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text h4 {
+    color: $font-color-secondary;
+    text-transform: none;
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 2rem;
+    & img {
+      width: 100%;
+    }
+  }
+   &:nth-of-type(2) .contact__icon {
+    padding-bottom: 1.5rem;
+   }
+}
+
+.socials .fab {
+  font-size: 1.9rem;
+  color: $font-color-secondary;
+  padding: 2rem 1rem;
+}
+
+
+.copyright {
+  color: $font-color-secondary;
+  border-top: 2px solid $font-color;
+  padding: 2rem;
+  font-size: 1.3rem;
 }

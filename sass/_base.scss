@@ -90,13 +90,17 @@ h4 {
   text-decoration: none;
   font-weight: 700;
   color: #242424;
-  box-shadow: -3.508px 11.476px 20px rgba(0, 1, 1, 0.47);
   background-color: $bg-color-secondary;
+  transition: all .4s;
 
 &--red {
   color: $font-color-secondary;
   background-color: $color-primary;
 }
+
+  &:hover {
+    box-shadow: -3px 11px 20px rgba(0, 1, 1, 0.5);
+  }
 
 }
 
