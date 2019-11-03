@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0 auto;
 
-  ::before {
+  &::before {
     content: "";
     top: 0%;
     // Check media width > 1600px
@@ -18,6 +18,9 @@
     width: 55vw;
     height: 55vw;
     background-color: $color-secondary;
+    @media (max-width: $bp-small) {
+      display: none;
+     }
   }
 }
 
@@ -26,6 +29,10 @@
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media (max-width: $bp-small) {
+    flex-wrap: wrap;
+   }
 
 }
 
@@ -37,9 +44,16 @@
   justify-content: space-evenly;
   align-items: flex-start;
 
+  @media (max-width: $bp-small) {
+    align-items: center;
+   }
   & p {
     margin-top: 2rem;
     margin-right: 10rem;
+
+    @media (max-width: $bp-small) {
+      margin-right: auto;
+     }
   }
   & .btn {
     margin-top: 2rem
@@ -51,6 +65,10 @@
   flex: 1 1;
   z-index: -3;
 
+  @media (max-width: $bp-small) {
+      flex: 100%;
+      order: -1;
+   }
 
   & img {
     width: 100%;

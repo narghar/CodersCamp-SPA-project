@@ -9,6 +9,8 @@
   position: relative;
   z-index: -2;
 
+
+
   &__heading-box {
     padding: 25vh 0 0 0;
     background-image: url('../photo/bg2.jpg');
@@ -19,6 +21,10 @@
     background-clip: text;
     -webkit-background-clip: text;
     position: relative;
+
+    @media (max-width: $bp-small) {
+      padding: 15vh 0 0 0;
+     }
 
   }
 
@@ -34,17 +40,28 @@
     font-family: $font-secondary;
     font-weight: 400;
 
+    @media (max-width: $bp-small) {
+      width: 100%;
+      line-height: 1;
+    }
 
 
     &--main {
       display: block;
       font-size: 12.8rem;
 
+      @media (max-width: $bp-small) {
+       font-size: 6rem;
+      }
     }
 
 
     &--sub {
       font-size: 8.4rem;
+
+      @media (max-width: $bp-small) {
+        font-size: 4rem;
+       }
     }
   }
 
@@ -57,6 +74,13 @@
     background-image: url('../photo/model.png');
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (max-width: $bp-small) {
+      top: 43%;
+      left: 50%;
+      width: 60%;
+      transform: translate(-50%);
+     }
   }
 
 }
@@ -75,12 +99,20 @@
     text-decoration: none;
     font-size: 3.3rem;
     font-weight: 800;
+    @media (max-width: $bp-small) {
+      font-size: 3rem;
+     }
   }
 
   &__nav {
     margin-left: auto;
     display: flex;
     list-style: none;
+
+   //TODO: MENU
+    @media (max-width: $bp-small) {
+      display: none;
+     }
   }
 
   &__link {
@@ -102,6 +134,11 @@
   z-index: -1;
   text-shadow: 0 0 12px #231f20;
   padding: 25vh 0 0 0;
+
+  @media (max-width: $bp-small) {
+    padding: 15vh 0 0 0;
+
+   }
 }
 
 .read-more {
@@ -109,5 +146,9 @@
   top: 80vh;
   width: 80rem;
   text-align: center;
+
+  @media (max-width: $bp-small) {
+    width: 100%;
+   }
 }
 

@@ -5,7 +5,13 @@
   background-color: $bg-color-primary;
   display: grid;
   gap: 2rem;
+
   grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+
+  @media (max-width: $bp-smallest) {
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    padding: 5vw 3vw;
+   }
 
   & h2 {
     text-align: center;

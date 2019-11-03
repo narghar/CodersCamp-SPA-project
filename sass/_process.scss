@@ -4,9 +4,13 @@
   max-width: 160rem;
   margin: 0 auto;
   overflow: hidden;
+
   & h2 {
     padding: 0 10vw;
     max-width: 120rem;
+    @media (max-width: $bp-small) {
+      text-align: center;
+     }
   }
 }
 
@@ -17,13 +21,27 @@
   margin: 0 auto;
   display: flex;
 
+  @media (max-width: $bp-small) {
+    flex-direction: column;
+    padding: 0 2rem
+   }
 
   &__main-text {
     flex: 0 0 20%;
     margin-top: 3rem;
     margin-right: 12rem;
+
+    @media (max-width: $bp-small) {
+      margin-right: auto;
+      text-align: center;
+     }
+
     & .btn {
       margin: 3rem 0;
+
+      @media (max-width: $bp-small) {
+
+       }
     }
   }
   &__image {
@@ -42,6 +60,11 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: $bp-small) {
+      order: -1;
+      margin: 0;
+      transform: skewX(0);
+     }
 
 
 
@@ -58,6 +81,9 @@
       background-position: center;
       transform: skewX(25deg);
       z-index: -1;
+      @media (max-width: $bp-small) {
+        transform: skewX(0);
+       }
     }
     &:nth-child(3)::after {
       content: "";
@@ -72,6 +98,9 @@
       background-position: center;
       transform: skewX(25deg);
       z-index: -1;
+      @media (max-width: $bp-small) {
+        transform: skewX(0);
+       }
     }
     &:nth-child(4)::after {
       content: "";
@@ -86,6 +115,9 @@
       background-position: center;
       transform: skewX(25deg);
       z-index: -1;
+      @media (max-width: $bp-small) {
+        transform: skewX(0);
+       }
     }
   }
 
@@ -96,11 +128,17 @@
     color: $font-color-secondary;
     font-weight: 700;
     margin-right: 2rem;
+    @media (max-width: $bp-small) {
+      transform: skewX(0);
+     }
   }
   &__text {
     transform: skewX(25deg);
     color: $font-color-secondary;
     padding: 2rem 4rem;
     font-size: 1.5rem;
+    @media (max-width: $bp-small) {
+      transform: skewX(0);
+     }
   }
 }

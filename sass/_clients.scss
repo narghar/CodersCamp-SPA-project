@@ -2,14 +2,27 @@
   padding: 5vw 10vw;
   margin: 0 auto;
   max-width: 120rem;
+
+
+
+  & h2 {
+    @media (max-width: $bp-small) {
+      text-align: center;
+     }
+  }
 }
 
 .client {
   margin: 6rem 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $bp-small) {
+    flex-direction: column;
+    margin: 6rem 0 3rem 0;
+   }
+
   &__image {
     height: 20rem;
     width: 20rem;
@@ -19,6 +32,10 @@
     border: 1rem solid #fff;
     transform: rotate(45deg);
     overflow: hidden;
+
+    @media (max-width: $bp-small) {
+      margin-right: 0;
+     }
 
     & img {
       width: 150%;
@@ -34,12 +51,33 @@
     justify-content: space-around;
     position: relative;
 
+    @media (max-width: $bp-small) {
+      flex: 100%;
+      text-align: center;
+      height: auto;
+      margin-top: 2rem;
+     }
+
+
     &::before {
       content: "\201C";
       position: absolute;
       top: -7.5rem;
       left: -10rem;
       font-size: 20rem;
+
+      @media (max-width: $bp-small) {
+        font-size: 10rem;
+        top: -4rem;
+        left: -2.5rem;
+       }
+
+       @media (max-width: $bp-smallest) {
+        font-size: 8rem;
+        top: -3rem;
+        left: -.7rem;
+       }
+
     }
   }
 
@@ -47,15 +85,29 @@
     font-weight: 400;
     font-style: italic;
     line-height: 30px;
+
+    @media (max-width: $bp-smallest) {
+      line-height: 25px;
+      font-size: 1.4rem;
+     }
   }
 
   &__name {
     font-weight: 700;
+
+    @media (max-width: $bp-small) {
+      margin: 2rem 0;
+     }
   }
 }
 
 .other-clients {
   display: flex;
+
+  @media (max-width: $bp-small) {
+    justify-content: space-around;
+   }
+
   &-photo {
     width: 4rem;
     height: 4rem;
@@ -64,9 +116,19 @@
     transform: rotate(45deg);
     overflow: hidden;
 
+
+    @media (max-width: $bp-small) {
+      margin: 3rem 2rem 0 2rem;
+      width: 6rem;
+      height: 6rem;
+     }
     & img {
       width: 150%;
       transform: rotate(-45deg) translateY(-1rem);
+
+      @media (max-width: $bp-small) {
+        transform: rotate(-45deg) translateY(-2rem);
+       }
     }
   }
 }

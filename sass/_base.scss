@@ -30,8 +30,9 @@ $font-color-secondary: #fff;
 $font-color-headings: #494949;
 
 
-
-
+// RESPONSIVE BREAKPOINTS
+$bp-small: 36em;    // 576px;
+$bp-smallest: 20em;    // 320px;
 
 // CSS RESET
 *,
