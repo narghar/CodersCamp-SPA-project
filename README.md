@@ -9,5 +9,5 @@ It is PSD to HTML/CSS responsive project.
 
 ## TODO List
 
+- [ ] fix some responsive problems between 824px-1120px landscape view
 - [ ] add more triangles like on orginal design for desktop view
-- [ ] fix some responsive problems between 824px-1120px
