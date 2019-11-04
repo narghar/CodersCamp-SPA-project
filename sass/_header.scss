@@ -1,3 +1,5 @@
+@import "mixins";
+
 .header {
   height: 100vh;
   margin: 0 auto;
@@ -21,14 +23,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     position: relative;
-
     @media (max-width: $bp-small) {
       padding: 15vh 0 0 0;
      }
+    @include firefox-only {
+      background: none;
+    }
 
   }
-
-
 
   &__heading {
     width: 80rem;
@@ -39,6 +41,10 @@
     color: transparent;
     font-family: $font-secondary;
     font-weight: 400;
+
+    @include firefox-only {
+      color: #c5c5c5;
+    }
 
     @media (max-width: $bp-small) {
       width: 100%;
